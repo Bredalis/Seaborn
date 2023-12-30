@@ -9,7 +9,7 @@ consumos = sns.load_dataset('tips')
 
 # Nombres para la columna de los datos
 consumos.columns = [
-	'total', 'propia', 'genero', 'fumador',
+	'total', 'propina', 'genero', 'fumador',
 	'dia', 'tipo', 'comensales'
 ]
 
