@@ -19,15 +19,12 @@ figura, ejes = plt.subplots(1, 2, figsize = (15, 5))
 
 # Lineas
 sns.lineplot(
-	data = dataset, x = 'longitud_pico', y = 'longitud_aleta',
-	hue = 'especie', size = 'masa', sizes = (50, 50), 
-	style = 'sexo', ax = ejes[0]
-)
+    x = 'bill_length_mm', y = 'flipper_length_mm', 
+    data = dataset, hue = 'species')
+plt.show()
 
 # Dispersion
 sns.scatterplot(
-	data = dataset, x = 'especie', y = 'masa',
-	hue = 'sexo', style = 'sexo', ax = ejes[1]
-)
-
+    x = 'species', y = 'body_mass_g', data = dataset, 
+    hue = 'sex')
 plt.show()

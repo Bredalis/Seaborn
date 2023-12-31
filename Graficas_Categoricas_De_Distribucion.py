@@ -13,7 +13,7 @@ consumos.columns = [
 	'dia', 'tipo', 'comensales'
 ]
 
-print('Dataset de consumos:', consumos)
+print('Dataset de consumos: \n', consumos)
 
 # Graficas
 
