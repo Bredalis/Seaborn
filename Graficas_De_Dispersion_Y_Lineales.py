@@ -15,12 +15,10 @@ dataset.columns = [
 
 # Graficas
 
-figura, ejes = plt.subplots(1, 2, figsize = (15, 5)) 
-
 # Lineas
 sns.lineplot(
     x = 'bill_length_mm', y = 'flipper_length_mm', 
-    data = dataset, hue = 'species')
+    data = dataset, hue = 'especie')
 plt.show()
 
 # Dispersion
