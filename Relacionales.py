@@ -1,7 +1,8 @@
 
 from Dataset_Pinguinos import *
 
-# Grafica
+# Estilo de la grafica
+
 sns.set_theme(style = "darkgrid", context = "talk")
 
 relacional = sns.relplot(
