@@ -1,14 +1,14 @@
 
 from Dataset_Tips import *
 
-# Graficas
-
+# Gráficas categóricas
 def graficas_categoricas(tipo):
+    sns.catplot(
+        x = "dia", y = "total", data = consumos, 
+        hue = "comensales", s = 7, col = "fumador", kind = tipo
+    )
+    plt.show()
 
-	sns.catplot(
-	x = "dia", y = "total", data = consumos, 
-	hue = "comensales", s = 7, col = "fumador", kind = tipo)
-	plt.show()
-
+# Generar gráficos de tipo 'strip' y 'swarm'
 graficas_categoricas("strip")
 graficas_categoricas("swarm")

@@ -1,16 +1,16 @@
 
 # Librerías
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+# Cargar el dataset
 consumos = sns.load_dataset("tips")
 
-# Nombres para la columna de los datos
-
+# Asignar nombres a las columnas
 consumos.columns = [
 	"total", "propina", "genero", "fumador",
 	"dia", "tipo", "comensales"
 ]
 
-print("Dataset de consumos: \n", consumos)
+# Mostrar el dataset
+print("Dataset de consumos:\n", consumos)

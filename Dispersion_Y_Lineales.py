@@ -1,9 +1,11 @@
 
 from Dataset_Pinguinos import *
 
-# Lineas
-
+# Gráfico de líneas
 sns.lineplot(
-    x = "longitud_pico", y = "longitud_aleta", 
-    data = dataset, hue = "especie")
+    x = "longitud_pico", 
+    y = "longitud_aleta", 
+    data = dataset, 
+    hue = "especie"
+)
 plt.show()
