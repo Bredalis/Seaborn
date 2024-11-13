@@ -1,16 +1,16 @@
 
 # Librerías
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+# Cargar el dataset
 dataset = sns.load_dataset("penguins")
 
-# Nombres para la columna de los datos
-
+# Asignar nombres a las columnas
 dataset.columns = [
-	"especie", "isla", "longitud_pico", "profundidad_pico",
-	"longitud_aleta", "masa", "sexo"
+    "especie", "isla", "longitud_pico", "profundidad_pico",
+    "longitud_aleta", "masa", "sexo"
 ]
 
-print("Dataset de Pinguinos: \n", dataset)
+# Mostrar el dataset
+print("Dataset de Pinguinos:\n", dataset)
